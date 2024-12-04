@@ -36,7 +36,7 @@ namespace Progtetel
             {
                 if (x[i] > maxe)
                 {
-                    x[i] = x[maxe];
+                    maxe = x[i];
                 }
             }
             Console.WriteLine(maxe);

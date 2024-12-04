@@ -6,16 +6,32 @@ namespace Progtetel
     {
         static void Main(string[] args)
         {
-            // SIGMA
-
             int[] x = { 7, 2, -5, 4, 11, 9 };
 
-            // Max kiválasztás
+            // Párosok kiválogatása
 
             int n = x.Length;
 
-            int i = 0;
+            int[] parosak = new int[100];
+            int db = 0;
+            int i;
+            for (i = 0; i < n; i++)
+            {
+                if (x[i] % 2 == 0)
+                {
+                    parosak[db] = x[i];
+                    db++;
+                }
+            }
+            for (i = 0; i < db; i++)
+            {
+                Console.Write(parosak[i] + " ");
+            }
+
+            // Max kiválasztás - 100% fluffy hair 🤣🤣😂😂😅😅😅😅 low taper fade
+
             int maxe = 0;
+            i = 0;
             for (i = 0; i < n; i++)
             {
                 if (x[i] > maxe)
